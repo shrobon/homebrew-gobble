@@ -5,21 +5,21 @@
 class Gobble < Formula
   desc "A super-fast, easy-to-use file downloader written in Go"
   homepage "https://github.com/shrobon/gobble"
-  version "0.1.6"
+  version "0.1.10"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shrobon/gobble/releases/download/v0.1.6/gobble_0.1.6_darwin_amd64.tar.gz"
-      sha256 "032cfa47e8bb78181eb0aaa71a6cb90326a3d0eeee134819e5edd00787529f6d"
+      url "https://github.com/shrobon/gobble/releases/download/v0.1.10/gobble_0.1.10_darwin_amd64.tar.gz"
+      sha256 "ef03376d910cfcf5fa40c9dd0d3882fabe1e62554cdbc1585f8dbdf86ede4206"
 
       def install
         bin.install "gobble"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shrobon/gobble/releases/download/v0.1.6/gobble_0.1.6_darwin_arm64.tar.gz"
-      sha256 "b205018633b6ba0ba78d4c5aab143c70fdf9de7ca9991bf04d54e656bd4c5ddf"
+      url "https://github.com/shrobon/gobble/releases/download/v0.1.10/gobble_0.1.10_darwin_arm64.tar.gz"
+      sha256 "43a60e65e9c6f4ce8c1885d11e01dac461d6846dc588c4044e66a4c4681d3081"
 
       def install
         bin.install "gobble"
@@ -29,15 +29,15 @@ class Gobble < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shrobon/gobble/releases/download/v0.1.6/gobble_0.1.6_linux_amd64.tar.gz"
-      sha256 "b88398fdb74be2ca840c3005879ddf8289ddb8c69a75ba7380f9fba7ca737dd6"
+      url "https://github.com/shrobon/gobble/releases/download/v0.1.10/gobble_0.1.10_linux_amd64.tar.gz"
+      sha256 "bc5d5c9376af49b52c9bf983010ad1660fff2d7b7fa518c6fdc3d26bb2d12fd7"
       def install
         bin.install "gobble"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shrobon/gobble/releases/download/v0.1.6/gobble_0.1.6_linux_arm64.tar.gz"
-      sha256 "6c356cd88e19054449bc208fbb4472211e43a1b836717150b14e083e69c1f759"
+      url "https://github.com/shrobon/gobble/releases/download/v0.1.10/gobble_0.1.10_linux_arm64.tar.gz"
+      sha256 "d5f0afbd5bf6cbafaa34d0da2aa819754e1a1c485cb3982b3584cd3f8e788068"
       def install
         bin.install "gobble"
       end
